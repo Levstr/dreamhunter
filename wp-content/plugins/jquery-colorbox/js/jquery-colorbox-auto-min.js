@@ -1,0 +1,1 @@
+jQuery(document).ready(function(a){a("img").each(function(b,c){if(!a(c).attr("class").match("colorbox")){a(c).addClass("colorbox-manual")}})});

@@ -1,0 +1,17 @@
+/*
+Theme Name: _WP_TEMPLATE BASIC
+Theme URI: 
+Description: BASIC CROSS-BROWSER TEMPLATE
+Version: 2.0
+Author: fotonstep
+Tags: custom
+*/
+@import url("css/reset.css");
+@import url("css/960.css");
+@import url("css/text.css");
+@import url("css/classes.css");
+@import url("css/layout.css");
+@import url("home.css");
+
+
+/* CUSTOM PAGES -------------------------------------------------------------------------- */

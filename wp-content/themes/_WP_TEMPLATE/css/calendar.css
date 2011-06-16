@@ -1,0 +1,85 @@
+.ui-datepicker {
+	width:352px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right:85px;
+	cursor:pointer;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left:85px;
+	cursor:pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev span {
+	background-image:url(../images/calendar/prev.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:15px;
+}
+.ui-datepicker .ui-datepicker-prev-hover span {
+	background-image:url(../images/calendar/prev.gif);
+	background-position:0px -15px;
+	background-repeat:no-repeat;
+	height:15px;
+}
+.ui-datepicker .ui-datepicker-next span {
+	background-image:url(../images/calendar/next.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	height:15px;
+}
+.ui-datepicker .ui-datepicker-next-hover span {
+	background-image:url(../images/calendar/next.gif);
+	background-position:0px -15px;
+	background-repeat:no-repeat;
+	height:15px;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { 
+  color:#ff9a4a !important;
+	border: none medium; 
+	background:none; 
+}
+.ui-datepicker .ui-datepicker-header {
+	/*background-image:url(../images/calendar/back_top.gif);
+	background-position:top;
+	background-repeat:repeat-x;*/
+	background-image:none;
+	background-color:#F2F1EE;
+}
+.ui-datepicker .ui-datepicker-title {
+	color:#393939;
+	text-transform:uppercase;
+	font-size:15px;
+}
+.ui-datepicker-calendar {
+	background-color:#5AA0FF;
+}
+.ui-datepicker th {
+	padding-top:2px;
+	padding-bottom:0px;
+	text-transform:lowercase;
+	text-align:right;
+}
+.ui-datepicker-calendar th span {
+	font-size:12px;
+	color:#FEFFFF;
+	font-weight:bold;
+	padding-right:4px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	background-image:url(../images/calendar/day_2.gif);
+	color:#2175A1;
+	font-size:14px;
+	text-align:center;
+}
+
+.ui-datepicker-other-month a.ui-state-default {
+	background-image:url(../images/calendar/day_1.gif);
+	color:#626262;
+}
+
+.ui-state-active, .ui-state-active.ui-state-hover{
+  background:#5AA0FF url(none) !important;
+  color:#fff !important;
+}

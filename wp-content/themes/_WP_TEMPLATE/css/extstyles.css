@@ -1,0 +1,22 @@
+#header .header_cont {
+  background-image:url(../images/back_top.png);
+  background-position:bottom right;
+  background-repeat:no-repeat;
+}
+
+.d_form_search {
+	background-color:#F2F1EE;
+}
+.d_form_search .but_search {
+	background-color:#F2F1EE;
+}
+#d_hot .hot_r {
+	width:217px;
+}
+#d_hot .hot_l h2 {
+	margin-left:10px;
+}
+
+#d_hot .hot_l .deal_inf h2 {
+	margin-left:0px;
+}

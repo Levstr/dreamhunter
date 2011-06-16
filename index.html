@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Главная</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+	<meta name="description" content="Система поиска и on-line бронирования путешествий. Сообщество путешественников." />
+	<meta name="keywords" content="Система поиска и on-line бронирования путешествий. Сообщество путешественников." />		
+	<script type="text/javascript" src="http://userapi.com/js/api/openapi.js?22"></script>	
+</head>
+
+
+<body>
+	<div class="container_16">
+		<div class="grid_16 header">
+			<div class="grid_5 alpha">
+				<img class="logo" style="width:280px; height:76px;" src="img/logo.png" alt="DreamHunter" />
+			</div>
+			<div class="grid_11 omega">
+				<h1>СИСТЕМА ПОИСКА И <span>ON-LINE БРОНИРОВАНИЯ</span> ПУТЕШЕСТВИЙ</h1>
+			</div>
+		</div>	
+		<div class="grid_16 subscribe">		
+			<div class="grid_12 alpha open">	
+				<h2>СКОРО ОТКРЫТИЕ! ХОТИТЕ УЗНАТЬ ПЕРВЫМ?</h2>
+					<form class="mailForm" action="http://lists.stepinsoft.com/one_time_lists/1/add" method="POST">
+						<fieldset>
+							<label for="user_email">Оставьте свой e-mail</label>
+							<input id="user_email" name="email" size="40" type="text" />
+						</fieldset>
+						<input id="user_subscr" type="image" src="img/butt-sub2.png"/>
+					</form>						
+			</div>
+			<div class="grid_4 omega">
+				<div id="vk_groups"></div>
+				<script type="text/javascript">
+					VK.Widgets.Group("vk_groups", {mode: 0, width: "200", height: "180"}, 22536657);
+				</script>
+			</div>		
+		</div>
+		<div class="grid_16">	
+			<div class="grid_10 alpha foto">
+				<img style="width:539px; height:415px;" src="img/foto.png">
+			</div>
+			<div class="grid_6 omega description">
+				<h3>Так просто <span>МЕЧТАТЬ</span>, <br /> когда есть <span>ВЫБОР</span>.</h3>
+				<p>Присоединяйтесь к DREAMHUNTER<br />и получите доступ к базам данных ВСЕХ <br />(ну почти всех) тур-операторов.</p>
+				<h3>Так просто <span>ВЫБРАТЬ</span>, <br /> когда рядом <span>ДРУЗЬЯ</span>!</h3>
+				<p>Не можете выбрать место отдыха? <br /> Спросите у ваших друзей где лучше. Они рядом. <br /> Остались сомнения &#151; на помощь придут <br /> профессионалы DREAMHUNTER.</p>	
+				<h3>Так просто <span>БЫТЬ ПЕРВЫМ</span>!</h3>
+				<p class="enddescr">Выбрали &#151; покупайте. Вкусные туры<br />разбирают быстро! Будьте первыми!<br />Используйте оплату в режиме <span>ONLINE</span>!</p>	
+				<p class="plsystem"><img style="width:39px; height:25px;" src="img/visa.png"> <img style="width:41px; height:25px;" src="img/master.png"></p>
+				<div class="but-like">
+					<h3>Рассказать друзьям</h3>
+					<div id="vk_like"></div>
+  				<script type="text/javascript">
+  					VK.init({apiId: 2181044, onlyWidgets: true});
+  				</script>
+					<script type="text/javascript">
+					VK.Widgets.Like("vk_like", {type: "full"});
+					</script>
+				</div>
+			</div>
+		</div>	
+			
+		<!-- Yandex.Metrika counter -->
+			<div style="display:none;"><script type="text/javascript">
+				(function(w, c) {
+					(w[c] = w[c] || []).push(function() {
+					try {
+						 w.yaCounter4512682 = new Ya.Metrika(4512682);
+						 yaCounter4512682.clickmap(true);
+						 yaCounter4512682.trackLinks(true);
+										
+						} catch(e) { }
+					});
+					})(window, 'yandex_metrika_callbacks');
+			</script></div>
+			<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+			<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/4512682" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+		
+	
+	</div>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(document).ready(function() {
+	    $('.mailForm').submit(function() {
+	      if($('#user_email').val()==''){
+	        alert('Пожалуйста, введите адрес эл. почты');
+	        return false;
+	      }
+	      return true;
+	    });
+	  });
+	</script>	
+</body>
+</html>

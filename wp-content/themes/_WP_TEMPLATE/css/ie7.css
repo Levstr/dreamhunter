@@ -1,0 +1,48 @@
+body{
+  word-wrap:break-word;
+}
+
+#wrapper-main {
+	margin-bottom:-55px;
+	background-color:transparent;
+}
+#clearfooter {
+	height:51px;
+}
+
+.d_work {
+    width:210px;
+}
+#d_vk_top {
+    width:117px;
+}
+.d_vk div a {
+	display:block;
+	float:left;
+}
+
+.d_top_buts ul  {
+	display:inline;
+}
+.d_top_buts ul li {
+	float:left;
+}
+.menu_help  {
+	width:270px;
+}
+
+#d_hot {
+	/*float:left;*/
+}
+
+#content {	
+	float:left;
+	width:100%;
+}
+#d_hot .hot_l h2 {
+	width:377px;
+}
+.hot_tags a {
+	white-space:nowrap;
+}
+

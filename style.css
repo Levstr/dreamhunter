@@ -1,0 +1,407 @@
+﻿html, body, table, tr, td,
+form, ul, ol, dl, dt, dd, li,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, label, fieldset, address, div, img { margin: 0; padding: 0; }
+
+fieldset, label { padding-bottom: 1em; }
+.nobtm { padding-bottom: 0; }
+
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
+a img,fieldset { border: 0; }
+form { display: inline; }
+td, p { font-size: 100%; }
+
+
+table.layout { border-spacing: 0; border-width: 0; empty-cells: show; border-collapse: collapse; }
+
+@media screen {
+  .onlyprint { display: none; }
+}
+
+@media print {
+  .nonprintable { display: none; }
+  a:link:after, a:visited:after { content: " (" attr(href) ") "; font-size: 90%; }
+}
+
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* common design
+***************************************/
+
+body, p, td, input { font: 0.8em/1.3em Arial, sans-serif; }
+body { background: #fff; color: #444; }
+
+h1, h2, h3, h4, h5, h6 { color: #203d69; font-family: Verdana;}
+h1 { font-size: 2.0em; font-weight: normal; text-align:center; line-height: 1; margin-bottom: 0.5em; }
+h2 { font-size: 1.8em; font-weight: normal; margin-bottom: 0.5em;}
+h3 { font-size: 1.2em; font-weight: normal; line-height: 1; margin-bottom: 1em; }
+h4 { font-size: 1.2em; font-weight: normal; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+h1 small { font-size: 0.6em; }
+
+ul, ol { list-style-position: inside; }
+ol { list-style: decimal; }
+ul { list-style-image: url(tire.png);}
+li {font-size:1.3em; margin-left: 1.5em; padding:5px 5px 5px 5px;}
+
+hr { border: 0 #ccc solid; border-top-width: 1px; clear: both; height: 0; }
+
+p {font-size: 1.1em; text-align: justify; padding: 10px 0 10px 0; }
+
+a {color: #018ccd; text-decoration:none;}
+a:visited { color: #f38000; }
+a:hover { color: #f38000; }
+a:focus { outline: 1px dotted invert; }
+
+pre {color: #999; font-size: 12px; padding:10px 10px 10px 10px; background: #eee; overflow: auto;}
+blockquote {font-style:italic; color: #999; font-size: 12px; border-left: 2px solid #999; padding:0 10px 0 10px; }
+/*____________________________________*/
+form label { padding-bottom: 0; clear: both; }
+form .text { clear:both; width: 98%; }
+form textarea { width: 98%; font-size: 1.2em; height: 200px;}
+.fieldWithErrors { display:inline; }
+.fieldWithErrors .text { border: 2px solid red; }
+
+.formError { color: #d92327; font-size: 0.9em; }
+
+
+
+
+/*_____________Заголовок сайта с логотипом_______________________*/
+
+.header {padding:20px 0;}
+.header h1 {padding:30px 0 10px 0; font-size:1.5em; text-align:right; }
+.header span {color: #018ccd;}
+
+
+/*_____________Основной текст_______________________*/
+.open {padding-top:60px;}
+.description {text-align:right; padding-top:10px;}
+.description h3 {font-weight:bold; margin-bottom:0; }
+.description p  {text-align:right; margin-bottom:20px; padding:5px 0;}
+.description img {}
+p.plsystem {text-align:right; padding:0; margin-bottom:5px;}
+p.enddescr { margin-bottom:5px;}
+.description span{color: #018ccd;}
+.thanks {padding-top:100px; text-align:center; font-size:1.7em;}
+.thanks span{color: #018ccd;}
+
+.foto {height:425px;}
+.foto img {margin-top:8px; padding:0; }
+
+
+/*_____________Подписка на рассылку_______________________*/
+
+.subscribe {padding:10px 0; text-align:center; background-color:#e6f5fd;}
+.subscribe h2 {}
+.subscribe p {text-align:center; padding-bottom:10px;}
+.subscribe fieldset {position:relative; padding-top:10px; padding-bottom:0;}
+.subscribe label {position:relative; top:3px; padding-right:10px; font-size:1.4em; color:#555;}
+.subscribe input {width:220px; padding: 5px;}
+#user_subscr {width:140px; height:35px; padding-top:15px;}
+
+/*_____________Виджеты В контакте_______________________*/
+
+.social {padding:30px 0;}
+.but-like {padding-top:10px;}
+.but-like  h3{color: #018ccd; display:inline; padding-right:10px; position:relative; bottom:5px;}
+#vk_like {display:inline;}
+#vkwidget2 {width:105px !important; }
+
+/*_____________Футер_______________________*/
+
+.footer {padding: 50px 0 10px 0; font-size:1.3em;}
+.footleft {width: 50%; text-align:left;}
+.footright {width: 50%; text-align: right;}
+.footright span {color: #018ccd; font-weight: bold;}
+.tablefoot {width: 100%;}
+
+/*____________________________________*/
+
+/*
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/* `Containers
+----------------------------------------------------------------------------------------------------*/
+
+.container_12,
+.container_16 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16 {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.container_12 .grid_3,
+.container_16 .grid_4 {
+	width: 220px;
+}
+
+.container_12 .grid_6,
+.container_16 .grid_8 {
+	width: 460px;
+}
+
+.container_12 .grid_9,
+.container_16 .grid_12 {
+	width: 700px;
+}
+
+.container_12 .grid_12,
+.container_16 .grid_16 {
+	width: 940px;
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+
+/* `Grid >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_16 .grid_1 {
+	width: 40px;
+}
+
+.container_16 .grid_2 {
+	width: 100px;
+}
+
+.container_16 .grid_3 {
+	width: 160px;
+}
+
+.container_16 .grid_5 {
+	width: 280px;
+}
+
+.container_16 .grid_6 {
+	width: 340px;
+}
+
+.container_16 .grid_7 {
+	width: 400px;
+}
+
+.container_16 .grid_9 {
+	width: 520px;
+}
+
+.container_16 .grid_10 {
+	width: 580px;
+}
+
+.container_16 .grid_11 {
+	width: 640px;
+}
+
+.container_16 .grid_13 {
+	width: 760px;
+}
+
+.container_16 .grid_14 {
+	width: 820px;
+}
+
+.container_16 .grid_15 {
+	width: 880px;
+}
+
+/* `Prefix Extra Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .prefix_3,
+.container_16 .prefix_4 {
+	padding-left: 240px;
+}
+
+.container_12 .prefix_6,
+.container_16 .prefix_8 {
+	padding-left: 480px;
+}
+
+.container_12 .prefix_9,
+.container_16 .prefix_12 {
+	padding-left: 720px;
+}
+
+/* `Prefix Extra Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_16 .prefix_1 {
+	padding-left: 60px;
+}
+
+.container_16 .prefix_2 {
+	padding-left: 120px;
+}
+
+.container_16 .prefix_3 {
+	padding-left: 180px;
+}
+
+.container_16 .prefix_5 {
+	padding-left: 300px;
+}
+
+.container_16 .prefix_6 {
+	padding-left: 360px;
+}
+
+.container_16 .prefix_7 {
+	padding-left: 420px;
+}
+
+.container_16 .prefix_9 {
+	padding-left: 540px;
+}
+
+.container_16 .prefix_10 {
+	padding-left: 600px;
+}
+
+.container_16 .prefix_11 {
+	padding-left: 660px;
+}
+
+.container_16 .prefix_13 {
+	padding-left: 780px;
+}
+
+.container_16 .prefix_14 {
+	padding-left: 840px;
+}
+
+.container_16 .prefix_15 {
+	padding-left: 900px;
+}
+
+/* `Suffix Extra Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .suffix_3,
+.container_16 .suffix_4 {
+	padding-right: 240px;
+}
+
+.container_12 .suffix_6,
+.container_16 .suffix_8 {
+	padding-right: 480px;
+}
+
+.container_12 .suffix_9,
+.container_16 .suffix_12 {
+	padding-right: 720px;
+}
+
+
+/* `Suffix Extra Space >> 16 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_16 .suffix_1 {
+	padding-right: 60px;
+}
+
+.container_16 .suffix_2 {
+	padding-right: 120px;
+}
+
+.container_16 .suffix_3 {
+	padding-right: 180px;
+}
+
+.container_16 .suffix_5 {
+	padding-right: 300px;
+}
+
+.container_16 .suffix_6 {
+	padding-right: 360px;
+}
+
+.container_16 .suffix_7 {
+	padding-right: 420px;
+}
+
+.container_16 .suffix_9 {
+	padding-right: 540px;
+}
+
+.container_16 .suffix_10 {
+	padding-right: 600px;
+}
+
+.container_16 .suffix_11 {
+	padding-right: 660px;
+}
+
+.container_16 .suffix_13 {
+	padding-right: 780px;
+}
+
+.container_16 .suffix_14 {
+	padding-right: 840px;
+}
+
+.container_16 .suffix_15 {
+	padding-right: 900px;
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
